@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bronco Esports Media Collection <div 2020="" to="" 2023=""></div></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        nav {
+            text-align: center;
+            background-color: #444;
+            padding: 10px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            margin: 0 15px;
+            font-size: 1.2rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .container h2 {
+            font-size: 1.5rem;
+        }
+
+        .container p {
+            line-height: 1.6;
+        }
+
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .image-gallery > li {
+            flex-basis: 350px; /* width: 350px; */
+        }
+
+        .image-gallery li img {
+            object-fit: cover;
+            max-width: 100%;
+            height: auto;
+            vertical-align: middle;
+            border-radius: 5px; 
+        }
+        
+        @media only screen and (min-width: 768px) {
+            .image-gallery {
+                flex-direction: row;
+        }
+
+        .image-item {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .overlay {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(57, 57, 57, 0.502);
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            transition: all 0.2s 0.1s ease-in-out;
+            color: #fff;
+            /* center overlay content */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <nav class = "navbar--sticky">
+        <div>
+            <h1 style = "text-align:left;">
+                <a href = 'index.html'> Home</a>
+            </h1>
+        </div>
+    </nav>
+    <header>
+        <h1>Bronco Esports Media Collection</h1>
+    </header>
+    <div class = "container">
+        <div class = "image-gallery">
+            <div class ="column"></div>
+    </div>
+    <div class="image-item">
+        <img src="https://source.unsplash.com/VWcPlbHglYc" alt="" />
+        <div class="overlay"><span>Image title</span></div>
+      </div>
+      <div class="image-item">
+        <img src="https://source.unsplash.com/e6FMMambeO4" alt="" />
+        <div class="overlay"><span>Image title</span></div>
+      </div>
+      <div class="image-item">
+        <img src="BE Media Gallery/TFT_tournament.jpg" alt="" />
+        <div class="overlay"><span>Image title</span></div>
+      </div>
+    </div>
+  
+</body>
+</html>
